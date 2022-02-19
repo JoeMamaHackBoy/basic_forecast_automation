@@ -10,4 +10,4 @@ https://openweathermap.org
 #### Get your API key information:
 https://home.openweathermap.org/api_keys
 #### Python Module Installation:
-
+pip install requests
