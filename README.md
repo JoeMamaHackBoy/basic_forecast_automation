@@ -5,7 +5,7 @@
 #### Copy the forecast automation python file from this link or check out my repository with an uploaded file called auto_forecast.py:
 https://github.com/JoeMamaHackBoy/basic_forecast_automation/blob/main/auto_forecast.py
 #### VERY IMPORTANT!
-##### Make sure that you use your own API key and insert it inside the variables called "API_KEY" after you copy the python file! otherwise it won't show http request from a json format file that show the weather information. Just follow the guide below to get you API key!
+##### Make sure that you use your own API key after you create an account from openweathermap.org and insert it inside the variables called "API_KEY" after you copy the python file! otherwise it won't show http request in a json format file that will show the weather information. Just follow the guide below to get your API key!
 #### Requirements:
 #### Check if you have installed any of this python module below:
 requests.py
