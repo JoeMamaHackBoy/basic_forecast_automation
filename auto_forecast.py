@@ -1,17 +1,17 @@
 import requests
-
+#READ THIS IMPORTANT! YOU MUST PUT YOUR OWN API KEY INSIDE THE VARIABLE BELOW THIS MESSAGE ON LINE 3.
 API_KEY = ""
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather?"
 GEOLOCATION_URL = "http://api.openweathermap.org/geo/1.0/direct?"
 def run_forecast():
-    city = input("Choose the city for weather forcast: ")
+    city = input("City for the weather forecast: ")
     request_url_geolocation = f"{GEOLOCATION_URL}q={city}&appid={API_KEY}"
     response_geolocation = requests.get(request_url_geolocation)
     geolocation_data = response_geolocation.json()
-    print(geolocation_data)
+    #print(geolocation_data)
     lat = geolocation_data[0]["lat"]
     lon = geolocation_data[0]["lon"]
-    print(f"latitude = {lat} longtitude = {lon}")
+    #print(f"latitude = {lat} longtitude = {lon}")
     request_url = f"{BASE_URL}lat={lat}&lon={lon}&appid={API_KEY}"
     response = requests.get(request_url)
     if response.status_code == 200:
